@@ -1,0 +1,184 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+html {
+  background: url("https://www.jeopardy.com/sites/default/files/social_meta/background.jpg");
+}
+
+  .board {
+    position: absolute;
+    top: 70px;
+    left: 90px;
+    bottom: 0px;
+    width: 90%;
+    height: 750px;
+    border-bottom: 10px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+
+  #h1 {
+    text-align: center;
+    font-size: 3rem;
+    color:whitesmoke;
+    position: relative;
+    bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Roboto Mono', monospace;
+  }
+
+
+#one{
+  color: gold;
+}
+
+#two{
+  color: gold;
+}
+
+#three{
+  color: gold;
+}
+
+#four{
+  color: gold;
+}
+ 
+#five{
+  color: gold;
+}
+
+
+
+
+.board .row {
+    -webkit-box-flex: 1;
+            flex: 1;
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+  }
+  .board .row .tile {
+    top: 0;
+    bottom: 0;
+    -webkit-box-flex: 1;
+            flex: 1;
+    width: 100%;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    font-size: 3.5vw;
+    font-family: impact;
+    color: #ddd;
+    background: -webkit-gradient(linear, right bottom, left top, from(#000088), to(#0000ff));
+    background: linear-gradient(to top left, #000088, #0000ff);
+    border: 3px solid #000;
+  }
+
+  .board .row .tile:hover {
+    transform: scale(1.0.3);
+    border: solid 2px gold;
+    z-index: 1;
+  }
+  .board .row .question-value {
+    display: block;
+  }
+  .board .row .question-answer {
+    display: none;
+    text-align: center;
+  }
+  .board .row .tile.active {
+    border-width: 0;
+    font-size: 10vw;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    z-index: 5;
+  }
+  .board .row .tile.active .question-value {
+    display: none;
+  }
+  .board .row .tile.active .question-answer {
+    display: block;
+  }
+
+
+  #scorecard {
+    display: flex;
+    justify-content: space-around;
+    position:relative;
+    top: 720px;
+    font-size: 1.2rem;
+    height:100px;
+  }
+
+  #team1{
+    border: solid 2px gold;
+    padding:10px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 300px;
+  }
+
+  #team2{
+    border: solid 2px gold;
+    padding:10px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 300px;
+  }
+
+  #team3{
+    border: solid 2px gold;
+    padding:10px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 300px;
+  }
+
+  .increment1{
+    font-size: xx-large;
+  }
+.decrement1{
+  font-size: xx-large;
+}
+
+.increment2{
+  font-size: xx-large;
+}
+.decrement2{
+  font-size: xx-large;
+}
+
+.increment3{
+  font-size: xx-large;
+}
+.decrement3{
+  font-size: xx-large;
+}

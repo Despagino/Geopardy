@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeopardy</title>
+  <script src="jeopardy.js" defer></script>
+  <link rel="stylesheet" href="jeopardy.css">
+</head>
+
+<body>
+
+
+  <h1 id="h1">WELCOME TO GEOPARDY</h1>
+
+
+  <!-- JEOPARDY BOARD  -->
+  <div>
+    <div class="board">
+      <div class="row categories">
+        <div class="tile" id="one">HISTORY</div>
+        <div class="tile" id="two">LOCATION</div>
+        <div class="tile" id="three">TOURIST</div>
+        <div class="tile" id="four">SPORTS</div>
+        <div class="tile" id="five">RANDOM</div>
+      </div>
+      <div class="row clues">
+        <div class="tile">
+          <div class="question-value">$100</div>
+          <div class="question-answer">What happened on July 28, 1914?</div>
+          <div class="question-answer">World War 1</div>
+        </div>
+        <div class="tile">
+          <div class="question-value">$100</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile">
+          <div class="question-value">$100</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile">
+          <div class="question-value">$100</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile">
+          <div class="question-value">$100</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+      </div>
+      <div class="row clues">
+        <div class="tile">
+          <div class="question-value">$200</div>
+          <div class="question-answer">How many U.S. Presidents have there been?</div>
+        </div>
+        <div class="tile">
+          <div class="question-value">$200</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile">
+          <div class="question-value">$200</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile">
+          <div class="question-value">$200</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile">
+          <div class="question-value">$200</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+      </div>
+      <div class="row clues">
+        <div class="tile" onclick="toggleActive(this)">
+          <div class="question-value">$300</div>
+          <div class="question-answer">Saint Patrick's Day was originally associated with what color?
+          </div>
+        </div>
+        <div class="tile" onclick="toggleActive(this)">
+          <div class="question-value">$300</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile" onclick="toggleActive(this)">
+          <div class="question-value">$300</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile" onclick="toggleActive(this)">
+          <div class="question-value">$300</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile" onclick="toggleActive(this)">
+          <div class="question-value">$300</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+      </div>
+      <div class="row clues">
+        <div class="tile" onclick="toggleActive(this)">
+          <div class="question-value">$400</div>
+          <div class="question-answer">In what state was Barack Obama born in?</div>
+        </div>
+        <div class="tile" onclick="toggleActive(this)">
+          <div class="question-value">$400</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile" onclick="toggleActive(this)">
+          <div class="question-value">$400</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile" onclick="toggleActive(this)">
+          <div class="question-value">$400</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile" onclick="toggleActive(this)">
+          <div class="question-value">$400</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+      </div>
+      <div class="row clues">
+        <div class="tile" onclick="toggleActive(this)">
+          <div class="question-value">$500</div>
+          <div class="question-answer">Who was the 33rd president of the U.S.A?</div>
+        </div>
+        <div class="tile" onclick="toggleActive(this)">
+          <div class="question-value">$500</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile" onclick="toggleActive(this)">
+          <div class="question-value">$500</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile" onclick="toggleActive(this)">
+          <div class="question-value">$500</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+        <div class="tile" onclick="toggleActive(this)">
+          <div class="question-value">$500</div>
+          <div class="question-answer">This is the answer.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCORECARD -->
+  <div id="scorecard">
+    <div id="team1">
+      TEAM 1
+      <h1 class="score1"></h1>
+      <button class="increment1">+</button>
+      <button class="decrement1">-</button>
+    </div>
+    <div id="team2">
+      TEAM 2
+      <h1 class="score2"></h1>
+      <button class="increment2">+</button>
+      <button class="decrement2">-</button>
+    </div>
+    <div id="team3">
+      TEAM 3
+      <h1 class="score3"></h1>
+      <button class="increment3">+</button>
+      <button class="decrement3">-</button>
+    </div>
+  </div>
+</body>
+
+</html>
